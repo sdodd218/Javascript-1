@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    
+<style>
+    body {
+            margin: 25px;
+            background-color: #cccccc;
+            font-family: Lato;
+            background-color: #ffffff;
+            border-radius: 10px;
+            border-style: solid;
+            border-width: 3px;
+            border-color: #1107a0;
+            padding: 15px;
+            width: 400px;
+        }
+    h1{
+        font-family: Lato;
+    }
+    p{
+        font-size: 14px;
+    }
+    button {
+            font-family: Lato;
+            margin-top: 10px;
+            border-radius: 10px;
+            background-color: green;
+            color: white;
+            border-style: solid;
+            border-width: 1px;
+            width: 25%;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+    
+    #statusArea {
+            font-size: 120%;
+             }
+                    
+  </style>
+</head>
+<h1>Number Guessing Game</h1>
+<p>Please enter a low number and a high number for our <br> guessing game range. Example (1-100)</p>
+<body>
+    <form name="guessForm" onsubmit="return submitData();">
+        <div id="statusArea">
+        </div>
+        <label for="min">Min</label>
+        <input type="text" name="min" id="min" /><br> <br>
+        <label for="max">Max</label>
+        <input type="text" name="max" id="max" /><br> <br>
+        <button type="submit"> Play Game</button>
+    </form>
+<div id="output"></div>
+<script src="Lab.js"></script>
+
+
+    
+</body>
+</html>
